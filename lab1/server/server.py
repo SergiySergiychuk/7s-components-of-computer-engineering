@@ -12,8 +12,7 @@ def save_generated_str():
     f.write(data)
     f.close()
     return full_path
-# def get_checksum_of_file(filename):
-#     return hashlib.md5(open(filename, 'rb').read()).hexdigest()
+
 def get_checksum(filename):
     return hashlib.md5(filename).hexdigest()
 
